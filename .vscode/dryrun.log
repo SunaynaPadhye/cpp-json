@@ -1,0 +1,5 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/sunayna/projects/helloworld/cpp-json'
+clang++ -g -Wall -std=c++2a -I./include *.cpp -o main
+make: Leaving directory '/home/sunayna/projects/helloworld/cpp-json'
+ 
