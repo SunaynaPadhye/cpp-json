@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/sunayna/projects/helloworld/cpp-json/build",
+  "command": "/usr/bin/g++   -I/home/sunayna/projects/helloworld/cpp-json/include  -g   -std=gnu++17 -o CMakeFiles/json_lib.dir/src/main.cpp.o -c /home/sunayna/projects/helloworld/cpp-json/src/main.cpp",
+  "file": "/home/sunayna/projects/helloworld/cpp-json/src/main.cpp"
+},
+{
+  "directory": "/home/sunayna/projects/helloworld/cpp-json/build",
+  "command": "/usr/bin/g++   -I/home/sunayna/projects/helloworld/cpp-json/include  -g   -std=gnu++17 -o CMakeFiles/json_lib.dir/src/json.cpp.o -c /home/sunayna/projects/helloworld/cpp-json/src/json.cpp",
+  "file": "/home/sunayna/projects/helloworld/cpp-json/src/json.cpp"
+}
+]

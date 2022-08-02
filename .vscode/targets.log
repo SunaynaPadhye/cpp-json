@@ -2,62 +2,34 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target 'all'.  Stop.
 
 # GNU Make 4.2.1
- 
 # Built for x86_64-pc-linux-gnu
- 
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
- 
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
- 
 # This is free software: you are free to change and redistribute it.
- 
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
- 
-# Make data base, printed on Fri Jul 29 12:07:25 2022
- 
+# Make data base, printed on Tue Aug  2 19:00:11 2022
 
 # Variables
- 
 
- 
 # 'override' directive
- 
 GNUMAKEFLAGS := 
- 
 # automatic
- 
 <D = $(patsubst %/,%,$(dir $<))
- 
 # automatic
- 
 ?F = $(notdir $?)
- 
 # environment
- 
 DESKTOP_SESSION = ubuntu
- 
 # default
- 
 .SHELLFLAGS := -c
- 
 # environment
- 
 XDG_SESSION_CLASS = user
- 
 # environment
- 
 XDG_SESSION_TYPE = x11
- 
 # automatic
- 
 ?D = $(patsubst %/,%,$(dir $?))
- 
 # environment
- 
 IM_CONFIG_PHASE = 1
- 
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
@@ -75,7 +47,7 @@ VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupp
 # environment
 _ = /usr/share/code/code
 # environment
-JOURNAL_STREAM = 8:43488
+JOURNAL_STREAM = 8:42949
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile (from 'Makefile', line 1)
@@ -91,7 +63,7 @@ XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/d
 # environment
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
-MANAGERPID = 1741
+MANAGERPID = 1745
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
@@ -103,7 +75,7 @@ PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/sunayna-inspiron-5558:@/tmp/.ICE-unix/1959,unix/sunayna-inspiron-5558:/tmp/.ICE-unix/1959
+SESSION_MANAGER = local/sunayna-inspiron-5558:@/tmp/.ICE-unix/1968,unix/sunayna-inspiron-5558:/tmp/.ICE-unix/1968
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -111,7 +83,7 @@ XDG_MENU_PREFIX = gnome-
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 260f5b8579a94b3e8191c6ce62caa0bf
+INVOCATION_ID = ed4c5d5b6ed64196b80273f81844e8f6
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -121,7 +93,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 90849
+GIO_LAUNCHED_DESKTOP_FILE_PID = 69821
 # automatic
 %F = $(notdir $%)
 # environment
@@ -131,7 +103,7 @@ PWD = /home/sunayna/projects/helloworld/cpp-json
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 1918
+SSH_AGENT_PID = 1929
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -225,7 +197,7 @@ GJS_DEBUG_OUTPUT = stderr
 # environment
 LANG = C
 # environment
-VSCODE_PID = 90849
+VSCODE_PID = 69821
 # variable set hash-table stats:
 # Load=93/1024=9%, Rehash=0, Collisions=12/118=10%
 
@@ -236,9 +208,9 @@ VSCODE_PID = 90849
 # Directories
 
 # include (device 2055, inode 1967143): 3 files, no impossibilities.
-# . (device 2055, inode 1837429): 12 files, no impossibilities.
+# . (device 2055, inode 1837429): 15 files, no impossibilities.
 
-# 15 files, no impossibilities in 2 directories.
+# 18 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
@@ -258,7 +230,7 @@ all:
 #  Modification time never checked.
 #  File has not been updated.
 
-format: main.cpp json.cpp include/json.hpp
+format: *.cpp include/json.hpp
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
@@ -274,24 +246,18 @@ Makefile:
 #  Successfully updated.
 
 # Not a target:
-main.cpp:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-json.cpp:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
 .DEFAULT:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
-main: main.cpp json.cpp include/json.hpp
+# Not a target:
+*.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+main: *.cpp include/json.hpp
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -305,19 +271,19 @@ include/json.hpp:
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=10/1024=1%, Rehash=0, Collisions=0/28=0%
+# Load=9/1024=1%, Rehash=0, Collisions=0/25=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 22 / storage = 190 B / avg = 8 B
-# current buf: size = 8162 B / used = 190 B / count = 22 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 26 / storage = 227 B / avg = 8 B
+# current buf: size = 8162 B / used = 227 B / count = 26 / avg = 8 B
 
-# strcache performance: lookups = 38 / hit rate = 42%
+# strcache performance: lookups = 39 / hit rate = 33%
 # hash-table stats:
-# Load=22/8192=0%, Rehash=0, Collisions=2/38=5%
-# Finished Make data base on Fri Jul 29 12:07:25 2022
+# Load=26/8192=0%, Rehash=0, Collisions=2/39=5%
+# Finished Make data base on Tue Aug  2 19:00:11 2022
 
  

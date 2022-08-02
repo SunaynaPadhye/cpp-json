@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/json.hpp
+map
+-
+memory
+-
+optional
+-
+string
+-
+vector
+-
+
+/home/sunayna/projects/helloworld/cpp-json/src/json.cpp
+json.hpp
+/home/sunayna/projects/helloworld/cpp-json/src/json.hpp
+sstream
+-
+
+/home/sunayna/projects/helloworld/cpp-json/src/main.cpp
+json.hpp
+/home/sunayna/projects/helloworld/cpp-json/src/json.hpp
+iostream
+-
+

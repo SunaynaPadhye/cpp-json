@@ -1,0 +1,4 @@
+# ninja log v5
+0	1730	1659337491056490275	CMakeFiles/json_lib.dir/src/main.cpp.o	7a97a53b1aca3937
+0	2920	1659337492244142641	CMakeFiles/json_lib.dir/src/json.cpp.o	9733478525862f3
+2920	3083	1659337492408095743	json_lib	70edc043feeb3ef6
